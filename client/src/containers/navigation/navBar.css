@@ -1,0 +1,26 @@
+.navBar {
+  height: 2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+}
+
+.navBar ul:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}

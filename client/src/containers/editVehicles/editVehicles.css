@@ -1,0 +1,41 @@
+.vehicle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: gray; */
+}
+
+select {
+  width: 30%;
+  margin: 2rem 0 2rem 35%;
+  font-size: 1.5rem;
+}
+
+.inputForm input {
+  display: block;
+  width: 40%;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submitButton {
+  width: 25%;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background-color: rgb(241, 245, 220);
+  margin: 0.8rem 36%;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+}
+
+.inputForm {
+  text-align: center;
+}

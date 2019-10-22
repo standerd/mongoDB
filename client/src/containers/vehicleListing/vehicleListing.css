@@ -1,0 +1,24 @@
+.vehicle {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+
+  padding: 0.2rem;
+  width: 80vw;
+}
+
+.vehicleButton {
+  width: 8%;
+  height: 5%;
+  margin-top: 2%;
+}
+
+.vehicleItem {
+  width: 20%;
+}
+
+.header {
+  background-color: lightgoldenrodyellow;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}

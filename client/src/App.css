@@ -1,0 +1,7 @@
+.App {
+  width: 80vw;
+  margin: 5rem auto;
+  border: 2px solid yellow;
+  background-color: rgba(222, 223, 173, 0.5);
+  padding: 1rem;
+}

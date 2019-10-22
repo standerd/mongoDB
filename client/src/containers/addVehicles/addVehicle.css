@@ -1,0 +1,27 @@
+.main {
+  text-align: center;
+}
+
+.inputForm input {
+  display: block;
+  width: 40%;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submitButton {
+  width: 25%;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background-color: rgb(241, 245, 220);
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+}
