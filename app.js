@@ -48,14 +48,17 @@ mongoose.connection.on("error", function() {
   process.exit();
 });
 
-mongoose.connection.once("open", function() {
-  console.log("Successfully connected to the database");
-});
 
 // Server connection setup
 
 const PORT = process.env.PORT || 3001;
-
-app.listen(PORT, () => {
-  console.log(`Server is listening on Port ${PORT}`);
+mongoose.connection.once("open", function() {
+  console.log("Successfully connected to the database");
+  app.listen(PORT, () => {
+    console.log(`Server is listening on Port ${PORT}`);
+  });
 });
+
+
+
+
