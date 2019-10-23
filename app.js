@@ -10,6 +10,16 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use(express.static(path.join(__dirname, "public")));
+
+//routes setup
+
+require("./routes/new.js")(app);
+require("./routes/home.js")(app);
+require("./routes/delete.js")(app);
+require("./routes/update.js")(app);
+require("./routes/findOld.js")(app);
+
 if (process.env.NODE_ENV === "production") {
   // Exprees will serve up production assets
   app.use(express.static("client/build"));
@@ -19,19 +29,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-
-app.use(express.static(path.join(__dirname, "public")));
-
-
-
-
-//routes setup
-
-require("./routes/new.js")(app);
-require("./routes/home.js")(app);
-require("./routes/delete.js")(app);
-require("./routes/update.js")(app);
-require("./routes/findOld.js")(app);
 
 // Database connection Setup
 
@@ -48,7 +45,6 @@ mongoose.connection.on("error", function() {
   process.exit();
 });
 
-
 // Server connection setup
 
 const PORT = process.env.PORT || 3001;
@@ -58,7 +54,3 @@ mongoose.connection.once("open", function() {
     console.log(`Server is listening on Port ${PORT}`);
   });
 });
-
-
-
-
