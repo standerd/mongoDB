@@ -2,7 +2,7 @@ This Project was built using react and express.js.
 
 It connects to mongo DB, so the client side code is dependant on the database connection being established, this project will not work without an internet connection.
 
-To start the project, open the project file in and navigate to the folder in your text editor.
+To start the project, open the project file and navigate to the folder in your text editor.
 
 in the main project folder run npm install, which will install the server and it's dependancies.
 
